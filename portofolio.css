@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://www.cs.rhul.ac.uk/home/zjac013/project/bg.jpg);
+    scroll-behavior: smooth;
+}
+
+ nav {
+    width: 100%;
+    display: flex;
+    padding: 2%, 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    position: fixed;
+}
+
+ .navigation {
+    flex: 1;
+    text-align: right;    
+ }
+
+ .navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 2%;
+}
+
+ .navigation ul li a {
+    color: rgb(187, 184, 184);
+    font-size: 2rem;
+    text-decoration: none;
+    /* position: sticky; */
+}
+
+.navigation ul li::after {
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: rgb(187, 184, 184);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+nav ul li:hover::after {
+    width: 100%;
+} 
+ section {
+    display: block;
+    height:100vh;
+    width:100%;
+    padding-top: 6%;
+    top: 50%
+ }
+
+ .img-text {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: wheat;
+    text-align: center;
+    font-size: 4rem;
+}
+
+ .contact-info {
+    width: 70%;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: wheat;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.work-info {
+    width: 70%;
+    position: absolute;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+}
+ section  * {
+    font-family: 'Times New Roman', Times, serif;
+ }

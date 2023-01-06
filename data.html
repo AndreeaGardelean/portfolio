@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="#about" class="btn1" value="About" >About</a></li>
+                <li><a href="#contact" class="btn1" value="Contact" >Contact</a></li>
+                <li><a href="#portfolio" class="btn1" value="Portfolio" >Portfolio</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <div class="main-contents">
+        <!-- about section -->
+        <section class="about-info" id="about">
+            <div class="img-text">Hello World!<br> 
+                                    I am Andreea Gardelean<br>
+                                    And I am here to make the world better
+            </div>
+            
+        </section>
+
+         <!-- contact section -->
+        <section id="contact">
+            <div class="contact-info">
+                <h1>
+                    Contact me:
+                </h1>
+                <p>E-mail: gardelean.andreea@yahoo.com</p>
+                <p>GitHub: <a href="https://github.com/AndreeaGardelean" style="color:white;        
+                                                                 text-decoration:none">https://github.com/AndreeaGardelean</a> </p>
+            </div>
+        </section>
+
+         <!-- work section  -->
+        <section id="portfolio">
+            <div class="work-info">
+                <h1>This is my work so far: </h1>
+            </div>
+        </section>
+    </div>
+</div>
+
+    
+       
+{% endblock %}
