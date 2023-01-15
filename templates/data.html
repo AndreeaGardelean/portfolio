@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/portfolio.css?{{ range(1, 9999) | random }}" 
+        media="screen, projector, print" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div>
+            <nav>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#home" class="btn1" value="Home" >Home</a></li>
+                        <li><a href="#about" class="btn1" value="About" >About</a></li>
+                        <li><a href="#contact" class="btn1" value="Contact" >Contact</a></li>
+                        <li><a href="#portfolio" class="btn1" value="Portfolio" >Portfolio</a></li>
+                    </ul>
+                </div>
+            </nav> 
+        
+            <div class="main-contents">
+                <!-- about section -->
+
+                <section class="home-info" id="home">
+                    <div class="welcome-text">Hello World!<br>
+                                            I am Andreea Gardelean<br>
+                                            And I am here to make the world better
+                    </div>
+                </section>
+
+                <section class="about-info" id="about">
+                    <div class="about-text"><p>As you might know already, I am Andreea :) <br><br>
+
+                        Short introduction about myself: I am a 2nd year student
+                        at Royal holloway, University of London majoring in Computer Science, 
+                        23 years old and simple hobbies like reading, movies, self growth.<br>
+                        
+                        Let me tell you about why I am here. 
+                        I am here because I want to become a professional Software Engineer.
+                        I want to go out there in the wide world of digital creation and be part of it, 
+                        help it evolve, and make it better.<br><br>
+
+                        Java and I have a love-hate relationship which always gives me great power and motivation to create.
+                        Python is a simple and easy friend, always there to help create.
+                        C is a spoiled one, hard to get it to understand me, I will eventually get there, we only know eachother
+                        for about 4 months or so.<br>
+
+                        A bit o web technology experience, which all started in 2020 when I had to create a web page as part of 
+                        the Foundation Year. <br><br>
+                        I also have experince with HTML, CSS, JavaScript, Python Flask, technologies which have been used to create this web page.<br>
+
+                        In the last section of this page you will be able to see the projects I have completed so far both as part of 
+                        the course or personal projects.<br>
+
+                        If you wish to learn more about me you can visit my GitHub account or check out my CV on LinkedIn.<br></p>
+                    </div>
+                    
+                </section>
+        
+                 <!-- contact section -->
+                <section id="contact">
+                    <div class="contact-info">
+                        <h1>
+                            Contact me:
+                        </h1>
+                        <p>E-mail: gardelean.andreea@yahoo.com</p>
+                        <p>GitHub: <a href="https://github.com/AndreeaGardelean" style="color:white;        
+                                                                         text-decoration:none">https://github.com/AndreeaGardelean</a> </p>
+                        <p>LinkedIn: www.linkedin.com/in/andreeagardelean/</p>
+                    </div>
+                </section>
+        
+                 <!-- work section  -->
+                <section id="portfolio">
+                    
+                    <div class="work">
+                        <div class="converter">
+                            <input type="radio" id="button1" name="slider1" checked autofocus>
+                            <label for="button1"></label>
+                            <div class="slide converter-pic1"></div>
+
+                            <input type="radio" id="button2" name="slider1">
+                            <label for="button2"></label> 
+                            <div class="slide converter-pic2"></div>
+
+                            <div id="converter-text">
+                                This is a personal project that has been created using CSS, HTML, 
+                                and JavaScript. The user is able to convert to and from 8 length units. 
+                                The result is shown in real-time, without the need to press a buttton
+                                to compute the value.
+                                The application consists of only 2 pages, an information page which has 
+                                information on how to use it and the main page.
+                                The source code can be found <a href="https://github.com/AndreeaGardelean/lengthConverter">here</a>
+                                or see the above images.
+                            </div> 
+                        </div>
+
+
+                       <div class="calculator">
+                           <input type="radio" id="calc-button1" name="slider2" checked autofocus>
+                           <label class="slider-2" for="calc-button1"></label>
+                           <div class="slide2 calculator-pic1"></div>
+                           
+                            <input type="radio" id="calc-button2" name="slider2">
+                           <label class="slider-2" for="calc-button2"></label>
+                           <div class="slide2 calculator-pic2"></div>
+                           <input type="radio" id="calc-button3" name="slider2">
+                           <label class="slider-2" for="calc-button3"></label>
+                           <div class="slide2 calculator-pic3"></div>
+                           <input type="radio" id="calc-button4" name="slider2">
+                           <label class="slider-2" for="calc-button4"></label>
+                           <div class="slide2 calculator-pic4"></div>
+                           <div id="calculator-text">
+                               Calculator application was built following a Test Driven Delopment, 
+                               and design patterns to reduce complexity and coupling between objects.
+                               The Graphical User Interface was built using JavaFx and the logic has been 
+                               implemented using Java objects.
+                               The code is fully documented using JavaDoc and has been incrementally pushed to GitLab.
+                               
+                               Due to course policy I am unable to amke the project publicly available. If you wish
+                               to see the source code please drop me an email and I can give you temporary acce
+                           </div> 
+                        </div>
+
+                       <div class="game">
+                           <input type="radio" id="game-button1" name="slider3" checked autofocus>
+                           <label for="game-button1"></label>
+                           <div class="slide3 game-pic1"></div>
+                           <input type="radio" id="game-button2" name="slider3">
+                           <label for="game-button2"></label>
+                           <div class="slide3 game-pic2"></div>
+                           <input type="radio" id="game-button3" name="slider3">
+                           <label for="game-button3"></label>
+                           <div class="slide3 game-pic3"></div>
+                           <input type="radio" id="game-button4" name="slider3">
+                           <label for="game-button4"></label>
+                           <div class="slide3 game-pic4"></div>
+                           <div id="game-text">
+                               The above is a 2D interactive game which was built using Python 
+                               and Python SimpleGUI module for the Graphical User Interface.
+                               The game is a replica of the retro game Space Invaders, has been 
+                               created as part of a team, over 4 weeks tim
+                           </div> 
+                       </div>           
+
+                        <div class="buggy-editor">
+                            <input type="radio" id="buggy-button1" name="slider4" checked autofocus>
+                            <label class="slider-4" for="buggy-button1"></label>
+                            <div class="slide4 buggy-pic1"></div>
+
+                            <input type="radio" id="buggy-button2" name="slider4">
+                            <label class="slider-4" for="buggy-button2"></label>
+                            <div class="slide4 buggy-pic2"></div>
+                            
+                            <input type="radio" id="buggy-button3" name="slider4">
+                            <label class="slider-4" for="buggy-button3"></label>
+                            <div class="slide4 buggy-pic3"></div>
+
+                            <input type="radio" id="buggy-button4" name="slider4">
+                            <label class="slider-4" for="buggy-button4"></label>
+                            <div class="slide4 buggy-pic4"></div>
+
+                            <input type="radio" id="buggy-button5" name="slider4">
+                            <label class="slider-4" for="buggy-button5"></label>
+                            <div class="slide4 buggy-pic5"></div>
+
+                            <input type="radio" id="buggy-button6" name="slider4">
+                            <label class="slider-4" for="buggy-button6"></label>
+                            <div class="slide4 buggy-pic6"></div>
+
+                            <input type="radio" id="buggy-button7" name="slider4">
+                            <label class="slider-4" for="buggy-button7"></label>
+                            <div class="slide4 buggy-pic7"></div>
+                            <div id="buggy-text">
+                                The Buggy Editor is my very first project. It was created
+                                during the Foundation Year course in 2020.
+                                The web page consists of a form which can either be autofilled
+                                or can be manually completed and submitted. The form can then
+                                be edited and viewed as form of a table or JSon data.
+                                The web page has a section "Poster" which contains information about 
+                                the web page and how it has been created.
+                                
+                            </div> 
+                        </div> 
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+   background-image: url(https://www.cs.rhul.ac.uk/home/zjac013/project/bg.jpg);
+   min-height: 100vh;
+   width: 100%;
+   scroll-behavior: smooth;
+}
+ 
+/* top navigation bar */
+ nav {
+    width: 100%;
+    display: flex;
+    padding: 2%, 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    position: fixed;
+    z-index: 10;
+}
+
+ .navigation {
+    flex: 1;
+    text-align: right;    
+ }
+
+ .navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 2%;
+}
+
+ .navigation ul li a {
+    color: rgb(187, 184, 184);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navigation ul li::after {
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: rgb(187, 184, 184);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+} 
+
+/* sections of the page */
+ section {
+    display: block;
+    height:100vh;
+    width:100%;
+    padding-top: 6%;
+ }
+
+ section  * {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ /* section 1 */
+ .welcome-text {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: wheat;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* about section */
+ .about-text {
+   width:70vw;
+   top: 163%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   display: flex;
+}
+
+.about-text p {
+   color: whitesmoke;
+    text-align:justify;
+    font-size: 25px;
+    flex: 1;
+}
+
+a {
+  color: white;
+}
+
+/* contact me section */
+.contact-info {
+   width: 80%;
+   top: 270%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   color: wheat;
+   text-align: right;
+   font-size: 3rem;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+.work {
+  margin: 10px;
+  height: 200%;
+  z-index: -10;
+}
+
+section[id="portfolio"] {
+  padding-top: 0;
+}
+
+ input {
+   position: absolute;  
+   opacity: 0;
+   cursor: pointer;
+ }
+
+ label {  /* these are the round buttons */
+   position: relative;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   border: solid 2px black;
+   border-radius: 999px;
+   background-color: transparent;
+   margin: 10px 6px 0 6px;
+   transform: translate(50%, -50%);
+
+   z-index: 10;
+   cursor: pointer;
+   box-shadow: 0 0 10px 0 white;
+ }
+
+ /* when the round buttons are selected they fill with white */
+ input:checked + label{
+   background-color: white;
+   width: 18px;
+   height: 18px;
+ }
+
+
+ input:checked + label + .slide {
+   transform: translateX(0);
+   opacity: 1;
+ }
+
+ input:checked + label + .slide2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+input:checked + label + .slide3 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+input:checked + label + .slide4 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+ .converter, .calculator, .game, .buggy-editor {
+  position: relative;
+  width:50%;
+  height: 20%;
+  transform: translate(0%, 20%);
+  margin-bottom: 100px;
+ }
+
+ .slide, .slide2, .slide3, .slide4 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35vw;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+}
+
+label.slider-2, label.slider-4 {
+  left:60vw;
+}
+
+ #converter-text, #calculator-text, #game-text, #buggy-text {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  left: 75%;
+  padding: 10px;
+  width: 60%;
+  height: 100%;
+  flex: 1;
+ }
+
+ .slide2, .slide4 {
+  left: 60vw;
+ }
+
+ #calculator-text, #buggy-text {
+  left: 27vw;
+ }
+
+.converter-pic1 {      
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/converter.jpg'); 
+}
+
+ .converter-pic2{
+     background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/converter2.jpg');
+}
+
+.calculator-pic1 {      
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/calculator.jpg'); 
+}
+
+ .calculator-pic2{
+     background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/calculator2.jpg');
+}
+
+.calculator-pic3{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/calculator3.jpg');
+}
+
+.calculator-pic4{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/calculator4.jpg');
+}
+
+.game-pic1{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/groupProject1.jpg');
+}
+
+.game-pic2{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/groupProject2.jpg');
+}
+
+.game-pic3{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/groupProject3.jpg');
+}
+
+.game-pic4{
+   background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/groupProject4.jpg');
+}
+/* -------------------------------------------------------- */
+.buggy-pic1 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy1.jpg');
+}
+.buggy-pic2 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy2.jpg');
+}
+.buggy-pic3 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy3.jpg');
+}
+.buggy-pic4 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy4.jpg');
+}
+.buggy-pic5 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy5.jpg');
+}
+.buggy-pic6 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy6.jpg');
+}
+.buggy-pic7 {
+  background-image: url('https://www.cs.rhul.ac.uk/home/zjac013/portfolio/buggy7.jpg');
+}
