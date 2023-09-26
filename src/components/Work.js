@@ -1,7 +1,7 @@
 
 const Work = () => {
     return(
-        <div> 
+        <div id="work">
             <p> My work: </p>
         </div>
     )

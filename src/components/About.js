@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div style={styles.container}>
+    <div id="about" style={styles.container}>
       <img src="/portrait.jpeg" style={styles.image} alt="Portrait" />
       <p style={styles.text}>About me</p>
     </div>

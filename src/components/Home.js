@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <img src= './helloWorld.jpg' style={styles.image}/>
         </div>
     )

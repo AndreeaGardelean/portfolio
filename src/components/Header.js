@@ -25,6 +25,14 @@ const Header = () => {
     }
   }, [])
 
+  const redirect = (element) => {
+    const targetElement = document.getElementById(element);
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   return (
     <div style={ styles.font}>
       <header style={styles.header}>
@@ -35,10 +43,10 @@ const Header = () => {
         </div>
         ) : (
         <ul style={styles.list}>
-          <li style={styles.listItem}> Home </li>
-          <li style={styles.listItem}> About </li>
-          <li style={styles.listItem}> Projects </li>
-          <li style={styles.listItem}> Contact </li>
+          <li style={styles.listItem} onClick={() => redirect("home")}> Home </li>
+          <li style={styles.listItem} onClick={() => redirect("about")} > About </li>
+          <li style={styles.listItem} onClick={() => redirect("work")} > Projects </li>
+          <li style={styles.listItem} onClick={() => redirect("contact")} > Contact </li>
         </ul> 
         )}
       </header>
