@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: 1em 2em 1em 2em;
+  /* width: 100%; */
+}
+
+.name {
+  flex: 1;
+  font-size: 1.8em;
+}
+
+.list {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 1.875em;
+}
+
+.listItem {
+  display: inline;
+}
+
+.dropdownList {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+
+.img {
+  max-width: 200px;
+  max-height: 50;
+}

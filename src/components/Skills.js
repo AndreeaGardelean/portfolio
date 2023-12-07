@@ -1,9 +1,10 @@
 import React from "react";
+import '../css/skills.css';
 
-const Home = () => {
+const Skills = () => {
     return (
-        <div id="home">
-            <img src= './helloWorld.jpg' style={styles.image}/>
+        <div id="skills">
+            <p>These are my skills</p>
         </div>
     )
 }
@@ -15,4 +16,4 @@ const styles = {
         borderRadius: 20
     }
 }
-export default Home;
+export default Skills;

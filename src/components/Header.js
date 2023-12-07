@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import '../css/header.css'
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
   }
 
   const handleScreenResizing = () => {
-    setIsSmallScreen(window.innerWidth < 580);
+    setIsSmallScreen(window.innerWidth < 630);
     setIsDropdownMenuVisible(false);
     console.log('small screen : ', isSmallScreen)
   }
@@ -34,24 +35,24 @@ const Header = () => {
   }
 
   return (
-    <div style={ styles.font}>
-      <header style={styles.header}>
-        <h style={styles.name}>Andreea Gardelean</h>
+    <div>
+      <header className="header">
+        <img src="/signature2.png" className="img"></img>
         { isSmallScreen ? (
         <div>
           <FontAwesomeIcon icon={faBars} onClick={handleDropdownMenu}/>
         </div>
         ) : (
-        <ul style={styles.list}>
-          <li style={styles.listItem} onClick={() => redirect("home")}> Home </li>
-          <li style={styles.listItem} onClick={() => redirect("about")} > About </li>
-          <li style={styles.listItem} onClick={() => redirect("work")} > Projects </li>
-          <li style={styles.listItem} onClick={() => redirect("contact")} > Contact </li>
+        <ul className="list">
+          <li className="listItem" onClick={() => redirect("about")} > About </li>
+          <li className="listItem" onClick={() => redirect("skills")} > Skills </li>
+          <li className="listItem" onClick={() => redirect("work")} > Projects </li>
+          <li className="listItem" onClick={() => redirect("contact")} > Contact </li>
         </ul> 
         )}
       </header>
       { isDropdownMenuVisible ? ( 
-        <ul style={styles.dropdownList}>
+        <ul className="dropdownList">
           <li> Home </li>
           <li> About </li>
           <li> Projects </li>
@@ -60,40 +61,6 @@ const Header = () => {
         ) : null }
     </div>
   );
-};
-
-const styles = {
-  font: {
-    fontFamily: "Times New Roman",
-    fontSize: 20
-  },
-  header: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  name: {
-    flex: 1,
-    fontSize: '2rem',
-  },
-  list: {
-    flex: 1,
-    listStyle: 'none',
-    display: 'flex',
-    justifyContent: 'flex-end',
-    flexWrap: 'nowrap',
-    overflow: 'hidden',
-    gap: 30
-  },
-  listItem: {
-    display: 'inline',
-  },
-  dropdownList: {
-    listStyle: 'none',
-    position: 'absolute',
-    right: 10,
-    alignItems: 'center'
-  }
 };
 
 export default Header;
