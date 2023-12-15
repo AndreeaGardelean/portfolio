@@ -2,8 +2,11 @@
   position: fixed;
   display: flex;
   align-items: center;
-  margin: 1em 2em 1em 2em;
-  /* width: 100%; */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 .name {
@@ -19,10 +22,12 @@
   flex-wrap: nowrap;
   overflow: hidden;
   gap: 1.875em;
+  padding-right: 2em;
 }
 
 .listItem {
   display: inline;
+  color: white;
 }
 
 .dropdownList {
@@ -33,6 +38,7 @@
 }
 
 .img {
-  max-width: 200px;
+  max-width: 70px;
   max-height: 50;
+  padding-left: 1em;
 }

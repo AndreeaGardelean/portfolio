@@ -2,34 +2,25 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  outline: 1px solid red;
 }
 
-#bottom {
-  height: 60vh;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-}
-
-#circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background-color: red;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  z-index: 2;
-}
-
-#bottom p {
+#description {
   color: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 30%
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:left;
+  color: white;
+  width: 40%;
+}
+
+#description p {
+  font-size: 1em;
+}
+
+#image {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
 }

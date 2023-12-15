@@ -4,11 +4,12 @@ import '../css/about.css';
 const About = () => {
   return (
     <div id="about">
-      <div id="circle"></div>
-      <div id="bottom">
-        <p>A paragraph about me</p>
-        <p>Another paragraph</p>
-        <p>And the last paragraph</p>
+      <img src="/about-background.png" id="image"></img>
+      <div id="description">
+        <p>I'm a 3rd-year computer science student with passion for algorithms and security. As a Teaching Assistant, I guide first-year students into the world of computer science.</p>
+        <p> I thrive on solving LeetCode challenges, and my journey as a full-stack developer has fueled my aspiration to become a software engineer.</p>
+        <p>Beyond coding, I find joy in reading, hiking, and expressing my creativity through photography and painting. </p>
+        <p>Let's build something great together!</p>
       </div>
     </div>
   );

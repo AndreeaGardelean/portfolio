@@ -9,21 +9,22 @@ import './css/page.css';
 
 function App() {
   return (
-    <div style={styles.page}>
+    <main style={styles.page}>
       <Header />
       <Welcome />
       <About />
       <Skills />
       <Work />
       <Contact />
-    </div>
+    </main>
   );
 }
 
 const styles = {
   page: {
     margin: 0,
-    width: '100%'
+    width: '100%',
+    display: 'block'
   }
 }
 

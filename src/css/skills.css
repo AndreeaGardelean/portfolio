@@ -2,5 +2,35 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  outline: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+#skills div p {
+  font-size: 1.2em;
+  --tw-bg-opacity: 1;
+  color: rgb(94 234 212/var(--tw-bg-opacity));
+}
+
+#front-end, #back-end, #soft-skills {
+  margin-left: 20%;
+  width: 35%;
+}
+
+#skill-item {
+  padding: 0.3em;
+  background-color: rgba(94, 234, 212, 0.5);
+  width: fit-content;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+#front-end-skill {
+  display: flex;
+  flex-direction: row;
 }

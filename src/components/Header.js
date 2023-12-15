@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import '../css/header.css'
+import '../css/header.css';
+import redirect from "../shared/redirect";
 
 const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -26,28 +27,20 @@ const Header = () => {
     }
   }, [])
 
-  const redirect = (element) => {
-    const targetElement = document.getElementById(element);
-    targetElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
-
   return (
     <div>
       <header className="header">
-        <img src="/signature2.png" className="img"></img>
+        <img src="/signature2.png" className="img" onClick={() => redirect("welcome")}></img>
         { isSmallScreen ? (
         <div>
           <FontAwesomeIcon icon={faBars} onClick={handleDropdownMenu}/>
         </div>
         ) : (
         <ul className="list">
-          <li className="listItem" onClick={() => redirect("about")} > About </li>
-          <li className="listItem" onClick={() => redirect("skills")} > Skills </li>
-          <li className="listItem" onClick={() => redirect("work")} > Projects </li>
-          <li className="listItem" onClick={() => redirect("contact")} > Contact </li>
+          <li className="listItem" onClick={() => redirect("about")} > // about </li>
+          <li className="listItem" onClick={() => redirect("skills")} > // skills </li>
+          <li className="listItem" onClick={() => redirect("work")} > // projects </li>
+          <li className="listItem" onClick={() => redirect("contact")} > // contact </li>
         </ul> 
         )}
       </header>
