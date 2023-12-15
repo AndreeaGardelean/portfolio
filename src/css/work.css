@@ -1,6 +1,41 @@
+
 #work {
   height: 100vh;
   width: 100%;
   position: relative;
-  outline: 1px solid orange;
+  justify-content: center;
+}
+
+#work-contents {
+  position: relative;
+  width: 80%;
+  outline: 1px red solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+}
+
+#work-contents div {
+  margin: 0 auto;
+  outline: 1px white solid;
+  width: 26.66%;
+  height: 15em;
+}
+
+@media screen and (max-width: 1200px) {
+  #work div {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #work div {
+    width: 80%;
+  }
 }
