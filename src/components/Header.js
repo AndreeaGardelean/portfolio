@@ -30,6 +30,7 @@ const Header = () => {
   return (
     <div>
       <header className="header">
+        {/* <p id="logo">AG</p> */}
         <img src="/signature2.png" className="img" onClick={() => redirect("welcome")}></img>
         { isSmallScreen ? (
         <div>

@@ -6,7 +6,7 @@ const Contact = () => {
       <div className='contact-container'>
         <div className='linkedin'>
           <p id="contact-greeting">Do you have something on your mind? </p>
-          <p id="conatct-message">If you have any questions or would like to share some
+          <p id="contact-message">If you have any questions or would like to share some
             thoughts you can connect with me via LinkedIn or GitHub, alternatively send an
             email using the  provided form.</p>
           <div className='connect'>
