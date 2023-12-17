@@ -5,11 +5,13 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Welcome from "./components/Welcome";
+import HeaderSmall from "./components/HeaderSmall";
 import './css/page.css';
 
 function App() {
   return (
     <main style={styles.page}>
+      <HeaderSmall />
       <Header />
       <Welcome />
       <About />

@@ -1,41 +1,87 @@
 
 #work {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  #work-contents {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+} 
+
+@media screen and (min-width: 1024px) {
+  #work-contents {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 #work-contents {
-  position: relative;
-  width: 80%;
-  outline: 1px red solid;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  gap: 2em;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1em;
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+  padding: 2rem;
+  max-width: 1536.5px;
+  width: calc(100% - 2rem);
+  margin-top: 74px;
 }
 
 #work-contents div {
   margin: 0 auto;
-  outline: 1px white solid;
-  width: 26.66%;
-  height: 15em;
+  max-width: 1024px;
+  width: calc(100% - 2rem);
 }
 
-@media screen and (max-width: 1200px) {
-  #work div {
-    width: calc(50% - 20px);
-  }
+#work-contents img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
-  #work div {
-    width: 80%;
-  }
+#calculator, #map, #to-do, #restaurant, #App {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#work-contents img {
+  width: 100%;
+}
+
+#calculator-info, #map-info, #toDo-info, #restaurant-info, #app-info {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  padding: 0 20px;
+  outline: 1px red solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+div p {
+  font-size: 1.1rem;
 }

@@ -5,10 +5,12 @@ const Contact = () => {
     <div id="contact">
       <div className='contact-container'>
         <div className='linkedin'>
-          <p id="contact-greeting">Do you have something on your mind? </p>
-          <p id="contact-message">If you have any questions or would like to share some
+          <div id='question-message'>
+            <p id="contact-greeting">Do you have something on your mind? </p>
+            <p id="contact-message">If you have any questions or would like to share some
             thoughts you can connect with me via LinkedIn or GitHub, alternatively send an
             email using the  provided form.</p>
+          </div>
           <div className='connect'>
             <p id="connect-greeting">Connect with me</p>
             <a href="https://www.linkedin.com/in/andreeagardelean/">

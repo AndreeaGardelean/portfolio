@@ -1,0 +1,17 @@
+.slider-icon {
+    z-index: 2;
+    font-size: 1.7rem;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  #icon-left {
+    left: 0;
+  }
+  
+  #icon-right {
+    right: 0;
+  }

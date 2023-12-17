@@ -7,16 +7,16 @@ import redirect from "../shared/redirect";
 const Welcome = () => {
 return (
   <div className='intro' id="welcome">
-    <div className="description">
+    <article className="description">
       <p className="greeting">Hi, my name is</p>
       <p className="name">Andreea Gardelean</p>
       <p className="phrase">Computer Science student, Full Stack Developer & aspiring Software Engineer</p>
-    </div>
+    </article>
 
-    <div className="more" onClick={() => redirect("about")}>
+    <article className="more" onClick={() => redirect("about")}>
       <p>Learn more about what I do</p>
       <FontAwesomeIcon icon={faAngleDown} id="icon"/>
-    </div>
+    </article>
   </div>
     )
 }

@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 74px;
 }
 
 #skills div p {
@@ -13,9 +13,19 @@
   color: rgb(94 234 212/var(--tw-bg-opacity));
 }
 
-#front-end, #back-end, #soft-skills {
+#front-end, #back-end {
   margin-left: 20%;
-  width: 35%;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  #front-end, #back-end {
+    position: relative;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
 }
 
 #skill-item {
@@ -28,9 +38,4 @@
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   color: white;
-}
-
-#front-end-skill {
-  display: flex;
-  flex-direction: row;
 }

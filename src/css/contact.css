@@ -4,19 +4,23 @@
 }
 
 #contact {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   position: relative;
 }
 
 .contact-container {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 74px);
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 3rem;
+  width: fit-content;
+  margin-top: 74px;
 }
 
 .linkedin {
@@ -29,6 +33,17 @@
   background-color: rgb(241, 240, 240);
   border-radius: 1em;
   height: fit-content;
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 821px) {
+  .linkedin {
+    width: auto;
+  }
+
+  .email {
+    margin: 0;
+  }
 }
 
 .sender-details {
@@ -128,3 +143,4 @@ form {
   position: relative;
   margin-top: 50px;
 }
+
