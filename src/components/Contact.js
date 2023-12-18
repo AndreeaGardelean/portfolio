@@ -8,7 +8,7 @@ const Contact = () => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    fetch('http://localhost:5000/contact', {
+    fetch('http://localhost:3030/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ const Contact = () => {
     .then(data => {
       if (data.msg === 'success') {
         const responseElement = document.getElementById('confirmation-email');
-        responseElement.innerHTML = 'Thank you for your email. I have received it and will get back to you soon.'
+        responseElement.innerHTML = 'Email sent.';
 
         document.getElementById('contact-form').reset();
       } else if (data.msg === 'fail') {
