@@ -8,7 +8,7 @@ const Contact = () => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    fetch('http://localhost:3030/contact', {
+    fetch('https://personal-portfolio-v1-0-0.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
