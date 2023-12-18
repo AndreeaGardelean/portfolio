@@ -74,7 +74,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div id="App">
+        {/* <div id="App">
         <InfoIcon id={'app-info'}/>
           <img src='/app1.png' id='app1-img' className='app-imgs'/>
           <img src='/app2.png' id='app2-img' className='app-imgs'/>
@@ -94,7 +94,7 @@ const Work = () => {
             integration and build processes.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
