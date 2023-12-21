@@ -75,7 +75,7 @@
   outline: 1px red solid;
   flex-direction: column;
   overflow-y: scroll;
-  text-align: justify;
+  text-align: left;
 }
 
 .title {

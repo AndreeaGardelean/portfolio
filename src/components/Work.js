@@ -35,7 +35,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div id="restaurant">
+        {/* <div id="restaurant">
           <InfoIcon id={'restaurant-info'} />
           <img src='/calculator2.png' id='restaurant1-img' className='restaurant-imgs'/>
           <img src='/calculator3.png' id='restaurant2-img' className='restaurant-imgs'/>
@@ -50,8 +50,8 @@ const Work = () => {
             updates via web sockets. Additionally, a managerial entity is 
             responsible for assigning waiters to tables, creating and deleting accounts, and overall application management.
           </p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         <div id="calculator">
           <InfoIcon id={'calculator-info'}/>
