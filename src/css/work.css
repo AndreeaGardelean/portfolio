@@ -1,93 +1,103 @@
-
 #work {
   min-height: 100vh;
-  height: fit-content;
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  #work-contents {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-} 
-
-@media screen and (min-width: 1024px) {
-  #work-contents {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-}
-
 #work-contents {
-  display: grid;
-  justify-items: center;
-  row-gap: 2rem;
-  padding: 2rem;
-  max-width: 1536.5px;
-  width: calc(100% - 2rem);
-  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-#work-contents div {
-  margin: 0 auto;
-  max-width: 1024px;
-  width: calc(100% - 2rem);
+.work-item {
+  display: none;
+  gap: 4rem;
 }
 
-#work-contents img {
-  display: block;
+.work-item.active {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+.info {
+  flex: 1;
+  color: white;
+  font-size: 1rem;
+}
+
+.imgs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.imgs img,
+.imgs .offlinemap-imgs,
+.imgs .calculator-imgs,
+.imgs .app-imgs {
   max-width: 100%;
   height: auto;
-  width: 100%;
-  border-radius: 0.5rem;
-  object-fit: cover;
 }
 
-#calculator, #map, #to-do, #restaurant, #App {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+.imgs .offlinemap-imgs.portrait {
+  max-height: 80%;
+  width: auto;
 }
 
-#work-contents img {
-  width: 100%;
+.link {
+  --tw-bg-opacity: 1;
+  color: rgb(94 234 212/var(--tw-bg-opacity));
+  text-decoration: none;
 }
 
-#calculator-info, #map-info, #toDo-info, #restaurant-info, #app-info {
+.work-slider {
   position: absolute;
-  display: none;
   align-items: center;
-  backdrop-filter: blur(5px);
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  padding: 0 20px;
-  outline: 1px red solid;
-  flex-direction: column;
-  overflow-y: scroll;
+  justify-content: center;
+  height: fit-content;
+}
+
+.alice-carousel__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__dots-item {
+  background: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: opacity 0.25s;
+}
+
+.alice-carousel__dots-item.__active {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.alice-carousel__next-btn {
   text-align: left;
+  display: none;
+}
+
+.alice-carousel__stage-item {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .title {
-  font-size: 1.3rem;
-  margin: 0;
+  font-size: 1.2rem;
 }
 
-div p {
-  font-size: 1.1rem;
-}
-
-#App img {
-  height: 50%;
-  width: fit-content;
+a {
+  margin-right: 2rem;
 }

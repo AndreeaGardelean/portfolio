@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background: rgba(15, 23, 42);
+}
+
+canvas {
+  display: block;
+
+}

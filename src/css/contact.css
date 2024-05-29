@@ -1,5 +1,5 @@
 * {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
 }
 
@@ -11,21 +11,18 @@
 }
 
 .contact-container {
-  position: absolute;
-  top: calc(50% - 74px);
-  transform: translateY(-50%);
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 3rem;
   width: fit-content;
-  margin-top: 74px;
+  margin-top: 10%;
 }
 
 .linkedin {
   padding: 1em;
-  width: 25%;
+  width: 40%;
 }
 
 .email {
@@ -34,11 +31,12 @@
   border-radius: 1em;
   height: fit-content;
   margin-left: 3rem;
+  margin-top: 74.5px;
 }
 
 @media only screen and (max-width: 821px) {
   .linkedin {
-    width: auto;
+    width: 40%;
   }
 
   .email {
@@ -55,7 +53,8 @@
   gap: 1em;
 }
 
-.name-label, .email-label {
+.name-label,
+.email-label {
   display: inline-block;
   color: rgba(41, 51, 71, 0.65);
 }
@@ -71,7 +70,8 @@ input {
   border-width: 0.1em;
 }
 
-.message label, .message textarea {
+.message label,
+.message textarea {
   position: relative;
   display: block;
   top: 2rem;
@@ -105,12 +105,14 @@ form {
   justify-content: center;
 }
 
-.input-text, #message {
+.input-text,
+#message {
   color: rgb(41, 51, 71);
   font-size: 1rem;
 }
 
-#email-greeting, #connect-greeting {
+#email-greeting,
+#connect-greeting {
   font-size: 1.5rem;
   color: rgb(24, 30, 42);
 }
@@ -143,4 +145,3 @@ form {
   position: relative;
   margin-top: 50px;
 }
-
