@@ -104,9 +104,9 @@ const Work = () => {
       controlsStrategy="responsive"
       renderPrevButton={() => null}
       renderNextButton={() => null}
-    // autoPlay
-    // autoPlayInterval={3000}
-    // infinite
+      autoPlay
+      autoPlayInterval={3000}
+      infinite
     />
   );
 
