@@ -9,12 +9,13 @@ const Skills = () => {
 			<div id="front-end">
 				<p> Front End</p>
 				<div id="front-end-skill">
-					<Skill value={'HTML'} />
+					<Skill value={'HTML5'} />
 					<Skill value={'CSS'} />
 					<Skill value={'React'} />
 					<Skill value={'React Native'} />
 					<Skill value={'JavaScript'} />
 					<Skill value={'JQuery'} />
+					<Skill value={'IndexedDB'} />
 
 				</div>
 			</div>
@@ -26,10 +27,8 @@ const Skills = () => {
 				<Skill value={'C'} />
 				<Skill value={'PostgreSQL'} />
 				<Skill value={'MongoDB'} />
-				<Skill value={'IndexedDB'} />
 				<Skill value={'Spring Boot'} />
 				<Skill value={'Falcon'} />
-				<Skill value={'HTML5'} />
 				<Skill value={'Node.js'} />
 				<Skill value={'Haskell'} />
 				<Skill value={'Scala'} />
