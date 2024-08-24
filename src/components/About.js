@@ -8,7 +8,7 @@ const About = () => {
       <MatrixRain />
       <article id="description">
         <p id="intro">More about me</p>
-        <p>Computer Science Graduate from Royal Holloway, University of London with a special interest in security, malware, and algorithms.
+        <p>Computer Science Graduate from Royal Holloway, University of London. Graduated with first-class honours, with a special interest in security, malware, and algorithms.
           <br></br><br></br> My experience as a teaching assistant for first-year undergraduate students has enhanced my understanding and ability to convey complex concepts effectively. </p>
         <p>As a Full Stack developer, I've worked on various projects, both personal and collaborative, and my role as a Software Engineer Intern has fueled my aspiration to excel further in this field.
           <br></br><br></br>
