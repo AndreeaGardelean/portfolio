@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 821px) {
   .linkedin {
-    width: 40%;
+    width: 80%;
   }
 
   .email {
@@ -103,6 +103,7 @@ form {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   justify-content: center;
+  cursor: pointer;
 }
 
 .input-text,
@@ -138,7 +139,6 @@ form {
   width: 30px;
   height: 30px;
   align-items: center;
-  margin-right: 20px;
 }
 
 .connect {

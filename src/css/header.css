@@ -39,6 +39,7 @@
 
 .listItem:hover {
   color: rgb(94 234 212);
+  cursor: pointer;
 }
 
 .dropdownList {
@@ -63,4 +64,5 @@
   margin-top: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.247);
   border-radius: 5rem;
+  cursor: pointer;
 }

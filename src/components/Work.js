@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import Sliders from '../shared/slider';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -22,32 +21,13 @@ const Work = () => {
           <a href="https://github.com/AndreeaGardelean/Offline-HTML5-Map" className='link'>Source code</a>
         </p>
       </div>
-      <div className='imgs'>
-        <img src='/pc.png' id='map1-img' className='offlinemap-imgs' />
-        <img src='/phone2.png' id='map2-img' className='offlinemap-imgs' hidden />
-        <img src='/tripPart2.png' id='map2-img' className='offlinemap-imgs' hidden />
-        <img src='/selectTrip.png' id='map2-img' className='offlinemap-imgs' hidden />
-        <img src='/savedTrips2.png' id='map2-img' className='offlinemap-imgs' hidden />
-        <Sliders className={'offlinemap-imgs'} />
-      </div>
-    </div>,
-
-    <div id="to-do" className='work-item active'>
-      <div className='info'>
-        <p className='title'>To-Do List</p>
-        <p>
-          Effortlessly manage your tasks, even without an internet connection. The To-Do List App is a Progressive Web Application (PWA) offers a seamless, native app-like experience directly from the web browser. he application can be added to the home screen for quick access, and enjoy full functionality offline with all your tasks securely stored locally. Experience the convenience of an app while leveraging the flexibility of the web.
-          <br></br>
-          The application leverages HTML5 technologies to achieve its goal.
-          <br /><br />
-          <a href="https://todolistpwa.onrender.com/" className='link'>Visit the app</a>
-          <a href="https://github.com/AndreeaGardelean/ToDoListPWA" className='link'>Source code</a>
-        </p>
-      </div>
-      <div className='imgs'>
-        <img src='/todo1.png' className='todo-img' />
-        <img src='/todo2.png' className='todo-img' hidden />
-        <Sliders className={'todo-img'} />
+      <div className='imgs' id='offline-map-container'>
+        <img alt='' src='/pc.png' className='slider-image' />
+        <img alt='' src='/phone2.png' className='slider-image' hidden />
+        <img alt='' src='/tripPart2.png' className='slider-image' hidden />
+        <img alt='' src='/selectTrip.png' className='slider-image' hidden />
+        <img alt='' src='/savedTrips2.png' className='slider-image' hidden />
+        <Sliders containerId='offline-map-container' />
       </div>
     </div>,
 
@@ -60,16 +40,16 @@ const Work = () => {
         </p>
       </div>
 
-      <div className='imgs'>
-        <img src='/calculator1.png' id='calc1-img' className='calculator-imgs' />
-        <img src='/calculator2.png' id='calc2-img' className='calculator-imgs' hidden />
-        <img src='/calculator3.png' id='calc3-img' className='calculator-imgs' hidden />
-        <img src='/calculator4.png' id='calc4-img' className='calculator-imgs' hidden />
-        <Sliders className={'calculator-imgs'} />
+      <div className='imgs' id='calculator-imgs'>
+        <img alt='' src='/calculator1.png' id='calc1-img' className='slider-image' />
+        <img alt='' src='/calculator2.png' id='calc2-img' className='slider-image' hidden />
+        <img alt='' src='/calculator3.png' id='calc3-img' className='slider-image' hidden />
+        <img alt='' src='/calculator4.png' id='calc4-img' className='slider-image' hidden />
+        <Sliders containerId='calculator-imgs' />
       </div>
     </div>,
 
-    <div id="App" className='work-item active'>
+    <div id="app" className='work-item active'>
       <div className='info'>
         <p className='title'>Loyalty Application</p>
         <p>
@@ -82,13 +62,31 @@ const Work = () => {
           Furthermore, I introduced the use of Google checkstyle for Java to enhance code documentation, facilitating clearer comprehension for team members.
         </p>
       </div>
-      <div className='imgs'>
-        <img src='/app1.png' id='app1-img' className='app-imgs' />
-        <img src='/app2.png' id='app2-img' className='app-imgs' hidden />
-        <img src='/app3.png' id='app3-img' className='app-imgs' hidden />
-        <img src='/app4.png' id='app4-img' className='app-imgs' hidden />
-        <img src='/app5.png' id='app4-img' className='app-imgs' hidden />
-        <Sliders className={'app-imgs'} />
+      <div className='imgs' id='loyalty-imgs'>
+        <img alt='' src='/app1.png' id='app1-img' className='slider-image' />
+        <img alt='' src='/app2.png' id='app2-img' className='slider-image' hidden />
+        <img alt='' src='/app3.png' id='app3-img' className='slider-image' hidden />
+        <img alt='' src='/app4.png' id='app4-img' className='slider-image' hidden />
+        <img alt='' src='/app5.png' id='app4-img' className='slider-image' hidden />
+        <Sliders containerId='loyalty-imgs' />
+      </div>
+    </div>,
+        <div id="to-do" className='work-item active'>
+      <div className='info'>
+        <p className='title'>To-Do List</p>
+        <p>
+          Effortlessly manage your tasks, even without an internet connection. The To-Do List App is a Progressive Web Application (PWA) offers a seamless, native app-like experience directly from the web browser. he application can be added to the home screen for quick access, and enjoy full functionality offline with all your tasks securely stored locally. Experience the convenience of an app while leveraging the flexibility of the web.
+          <br></br>
+          The application leverages HTML5 technologies to achieve its goal.
+          <br /><br />
+          <a href="https://todolistpwa.onrender.com/" className='link'>Visit the app</a>
+          <a href="https://github.com/AndreeaGardelean/ToDoListPWA" className='link'>Source code</a>
+        </p>
+      </div>
+      <div className='imgs' id='todo-imgs-container'>
+        <img alt='' src='/todo1.png' className='slider-image' />
+        <img alt='' src='/todo2.png' className='slider-image' hidden />
+        <Sliders containerId='todo-imgs-container' />
       </div>
     </div>
   ];

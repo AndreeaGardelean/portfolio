@@ -3,12 +3,15 @@ import { useEffect } from 'react';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import '../css/sliders.css';
 
-const Sliders = (prop) => {
+const Sliders = ({ containerId }) => {
   let slideIndex = 1;
 
-  const showImage = (n, className) => {
+  const showImage = (n) => {
     let i;
-    let x = document.getElementsByClassName(className);
+    let container = document.getElementById(containerId);
+    if (!container) return;
+
+    let x = container.getElementsByClassName('slider-image');
     if (x.length === 0) return;
 
     if (n > x.length) {
@@ -24,16 +27,22 @@ const Sliders = (prop) => {
     }
 
     x[slideIndex - 1].style.display = 'block';
+    console.log(x[slideIndex-1])
   };
 
-  const nextImage = (n, className) => {
-    showImage((slideIndex += n), className);
+  const nextImage = (n) => {
+    showImage((slideIndex += n));
   };
+
+useEffect(() => {
+  showImage(slideIndex);
+});
+
 
   return (
     <div id='slider'>
-      <FontAwesomeIcon icon={faAngleLeft} className='slider-icon' id='icon-left' onClick={() => nextImage(-1, prop.className)} />
-      <FontAwesomeIcon icon={faAngleRight} className='slider-icon' id='icon-right' onClick={() => nextImage(1, prop.className)} />
+      <FontAwesomeIcon icon={faAngleLeft} className='slider-icon' id='icon-left' onClick={() => nextImage(-1)} />
+      <FontAwesomeIcon icon={faAngleRight} className='slider-icon' id='icon-right' onClick={() => nextImage(1)} />
     </div>
   );
 };

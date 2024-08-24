@@ -24,27 +24,25 @@ const Skills = () => {
 				<p>Back End</p>
 				<Skill value={'Java'} />
 				<Skill value={'Python'} />
-				<Skill value={'C'} />
 				<Skill value={'PostgreSQL'} />
 				<Skill value={'MongoDB'} />
 				<Skill value={'Spring Boot'} />
 				<Skill value={'Falcon'} />
 				<Skill value={'Node.js'} />
-				<Skill value={'Haskell'} />
-				<Skill value={'Scala'} />
-				<Skill value={'Dafny'} />
-				<Skill value={'mcrl2'} />
 			</div>
 
 			<div id="other">
 				<p>Other</p>
 				<Skill value={'Software Verification'} />
+				<Skill value={'Dafny'} />
+				<Skill value={'mcrl2'} />
 				<Skill value={'Functional Programming'} />
+				<Skill value={'Haskell'} />
+				<Skill value={'Scala'} />
 				<Skill value={'Malicious Software'} />
 				<Skill value={'Computational Optimisation'} />
 				<Skill value={'Git/GitHub/GitLab'} />
 				<Skill value={'Linux'} />
-				<Skill value={'Vue'} />
 			</div>
 		</div>
 	)
