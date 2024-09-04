@@ -17,8 +17,9 @@ const Work = () => {
           <br /><br />
           The application follows Software Engineering best practices, and provides a flexible design compatible for both mobile and desktop devices.
           <br /><br />
-          <a href="https://offline-map-2o39.onrender.com/" className='link'>Visit the app</a>
+          <a href="https://offline-map.onrender.com/" className='link'>Visit the app</a>
           <a href="https://github.com/AndreeaGardelean/Offline-HTML5-Map" className='link'>Source code</a>
+          <a href="https://www.youtube.com/watch?v=Oj3teGtO1kM&feature=youtu.be" className='link'>Demo</a>
         </p>
       </div>
       <div className='imgs' id='offline-map-container'>
@@ -53,10 +54,10 @@ const Work = () => {
       <div className='info'>
         <p className='title'>Loyalty Application</p>
         <p>
-          The Loyalty application prototype represents a reimagining of loyalty programs, crafted collaboratively within a team of six Software Engineer interns over a six-week period. It harnesses blockchain technology for secure transaction processing, utilizes React Native for the front-end, and employs Java Spring Boot to create a RESTful API.
+          The Loyalty application prototype represents a re-imagining of loyalty programs, crafted collaboratively within a team of six Software Engineer interns over a six-week period. It harnesses blockchain technology for secure transaction processing, utilizes React Native for the front-end, and employs Java Spring Boot to create a RESTful API.
           <br></br><br></br>
 
-          Within the project, my responsibilities encompassed designing the personalized offers algorithm, developing the personalization quiz, constructing both the back-end and front-end of the user data page, participating in code reviews, implementing code design and feature design updates across various features.
+          Within the project, my responsibilities encompassed designing the personalized offers algorithm, developing the personalization quiz, constructing both the back-end and front-end of the user data page, implemented rewards history claim page, participating in code reviews, implementing code design and feature design updates across various features.
           <br></br><br></br>
 
           Furthermore, I introduced the use of Google checkstyle for Java to enhance code documentation, facilitating clearer comprehension for team members.
