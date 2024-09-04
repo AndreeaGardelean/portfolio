@@ -2,45 +2,8 @@ import Sliders from '../shared/slider';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import '../css/work.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect } from 'react';
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import '../css/sliders.css';
 
 const Work = () => {
-	let slideIndex = 1;
-
-	const showImage = (n, containerId) => {
-		let i;
-		let container = document.getElementById(containerId);
-		if (!container) return;
-
-		let x = container.getElementsByClassName('slider-image');
-		if (x.length === 0) return;
-
-		if (n > x.length) {
-			slideIndex = 1;
-		}
-
-		if (n < 1) {
-			slideIndex = x.length;
-		}
-
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = 'none';
-		}
-
-		x[slideIndex - 1].style.display = 'block';
-		console.log(x[slideIndex - 1]);
-	};
-
-	const nextImage = (n, containerId) => {
-		showImage((slideIndex += n), containerId);
-	};
-
-	useEffect((containerId) => {
-		showImage(slideIndex, containerId);
-	});
 
 	const items = [
 		<div id="map" className="work-item active">
@@ -83,7 +46,40 @@ const Work = () => {
 				<img alt="" src="/savedTrips2.png" className="slider-image offlinemap" hidden />
 				<Sliders className="offlinemap-container" containerId="offline-map-container" />
 			</div>
-		</div>,
+    </div>,
+    
+    <div id="js30" className="work-item active">
+			<div className="info">
+				<p className="title">JavaScript - 30</p>
+        <p>
+          I've embarked on a mini-challenge to build 30 features using pure JavaScript, whilst following a course by Wes Bos. Each feature dives into a new topic, function, or capability of JavaScript, expanding my understanding and skills.
+          <br />
+          <br />
+          Below, you'll find some pictures showcasing the projects I've completed. You can view the full collection of features I've developed on my GitHub.
+          <br />
+          <br />
+          Note: 90% of the images used in these projects are my own photography, reflecting another passion of mine.
+          <br />
+          <br />
+					<a href="https://github.com/AndreeaGardelean/30JavaScript" className="link">
+						Source code
+					</a>
+				</p>
+			</div>
+			<div className="imgs" id="js30-container">
+				<img alt="" src="/js1.png" className="slider-image" />
+				<img alt="" src="/js2.jpeg" className="slider-image" hidden />
+				<img alt="" src="/js3.jpeg" className="slider-image" hidden />
+				<img alt="" src="/js4.jpeg" className="slider-image" hidden />
+        <img alt="" src="/js7.jpeg" className="slider-image" hidden />
+				<img alt="" src="/js6.jpeg" className="slider-image" hidden />
+        <img alt="" src="/js9.jpeg" className="slider-image" hidden />
+        <img alt="" src="/js10.jpeg" className="slider-image" hidden />
+        <img alt="" src="/js11.jpeg" className="slider-image" hidden />
+				<Sliders containerId="js30-container" />
+			</div>
+    </div>,
+    
 		<div id="app" className="work-item active">
 			<div className="info">
 				<p className="title">Loyalty Application</p>
