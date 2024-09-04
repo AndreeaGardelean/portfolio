@@ -1,103 +1,117 @@
 #work {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #work-contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .work-item {
-  display: none;
-  gap: 4rem;
+	display: none;
+	gap: 10%;
 }
 
 .work-item.active {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 50%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
 }
 
 .info {
-  flex: 1;
-  color: white;
-  font-size: 1rem;
+	color: white;
+	font-size: 1rem;
+	width: 40%;
 }
 
 .imgs {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
 }
 
 .imgs img,
 .imgs .offlinemap-imgs,
 .imgs .calculator-imgs,
 .imgs .app-imgs {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	max-height: 50vh;
+}
+
+#loyalty-imgs {
+	height: 50vh;
 }
 
 .imgs .offlinemap-imgs.portrait {
-  max-height: 80%;
-  width: auto;
+	max-height: 80%;
+	width: auto;
 }
 
 .link {
-  --tw-bg-opacity: 1;
-  color: rgb(94 234 212/var(--tw-bg-opacity));
-  text-decoration: none;
+	--tw-bg-opacity: 1;
+	color: rgb(94 234 212 / var(--tw-bg-opacity));
+	text-decoration: none;
 }
 
 .work-slider {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	height: fit-content;
 }
 
 .alice-carousel__dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .alice-carousel__dots-item {
-  background: white;
-  opacity: 0.5;
-  border-radius: 50%;
-  transition: opacity 0.25s;
+	background: white;
+	opacity: 0.5;
+	border-radius: 50%;
+	transition: opacity 0.25s;
 }
 
 .alice-carousel__dots-item.__active {
-  opacity: 1;
-  width: 12px;
-  height: 12px;
+	opacity: 1;
+	width: 12px;
+	height: 12px;
 }
 
 .alice-carousel__next-btn {
-  text-align: left;
-  display: none;
+	text-align: left;
+	display: none;
 }
 
 .alice-carousel__stage-item {
-  padding-left: 10%;
-  padding-right: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .title {
-  font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 a {
-  margin-right: 2rem;
+	margin-right: 2rem;
+}
+
+.loyaltyapp {
+	height: 40vh;
+}
+
+#calculator-imgs {
+	width: 30vw;
 }
