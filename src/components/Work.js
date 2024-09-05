@@ -106,8 +106,8 @@ const Work = () => {
 				<img alt="" src="/app3.png" id="app3-img" className="slider-image loyaltyapp" hidden />
 				<img alt="" src="/app4.png" id="app4-img" className="slider-image loyaltyapp" hidden />
 				<img alt="" src="/app5.png" id="app5-img" className="slider-image loyaltyapp" hidden />
-				<img alt="" src="/app6.png" id="app6-img" className="slider-image loyaltyapp" hidden />
-				<img alt="" src="/app7.png" id="app7-img" className="slider-image loyaltyapp" hidden />
+				<img alt="" src="/app6.PNG" id="app6-img" className="slider-image loyaltyapp" hidden />
+				<img alt="" src="/app7.PNG" id="app7-img" className="slider-image loyaltyapp" hidden />
 				<Sliders containerId="loyalty-imgs" />
 			</div>
 		</div>,
