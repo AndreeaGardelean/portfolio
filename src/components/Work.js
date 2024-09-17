@@ -53,6 +53,7 @@ const Work = () => {
         <p>
 					Currently working on developing a Progressive Web Application which allows to track running activities. 
 					The application will allow to create an account such that activities can be linked with the user. Start an activity and keeps track of pace, distance and time. When done the activity will be saved and be added to the 'activities' page, showing a summary of all completed activities, and show the activities on a calendar to help keep track of day streaks and overall progress.
+					<br></br>
 					Note: the application is in early stage of development.
           <br />
           <br />
