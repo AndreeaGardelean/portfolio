@@ -46,6 +46,29 @@ const Work = () => {
 				<img alt="" src="/savedTrips2.png" className="slider-image offlinemap" hidden />
 				<Sliders className="offlinemap-container" containerId="offline-map-container" />
 			</div>
+		</div>,
+		<div id="runner" className="work-item active">
+			<div className="info">
+				<p className="title">Runner PWA</p>
+        <p>
+					Currently working on developing a Progressive Web Application which allows to track running activities. 
+					The application will allow to create an account such that activities can be linked with the user. Start an activity and keeps track of pace, distance and time. When done the activity will be saved and be added to the 'activities' page, showing a summary of all completed activities, and show the activities on a calendar to help keep track of day streaks and overall progress.
+					Note: the application is in early stage of development.
+          <br />
+          <br />
+          Tech stack: React, CSS, Java, SpringBoot, PostgreSQL, Javadoc, JSDoc, JUnit, Jest, React Testing Library.
+          <br />
+          <br />
+					<a href="https://github.com/AndreeaGardelean/Runner" className="link">
+						Source code
+					</a>
+				</p>
+			</div>
+			<div className="imgs" id="runner-container">
+				<img alt="" src="/runner0.jpeg" className="slider-image" />
+				<img alt="" src="/runner.jpeg" className="slider-image" hidden />
+				<Sliders containerId="runner-container" />
+			</div>
     </div>,
     
     <div id="js30" className="work-item active">
