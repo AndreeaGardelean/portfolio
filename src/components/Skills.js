@@ -16,7 +16,6 @@ const Skills = () => {
 					<Skill value={'JavaScript'} />
 					<Skill value={'JQuery'} />
 					<Skill value={'IndexedDB'} />
-
 				</div>
 			</div>
 
@@ -27,18 +26,15 @@ const Skills = () => {
 				<Skill value={'PostgreSQL'} />
 				<Skill value={'MongoDB'} />
 				<Skill value={'Spring Boot'} />
-				<Skill value={'Falcon'} />
 				<Skill value={'Node.js'} />
+				<Skill value={'Falcon'} />
 			</div>
 
 			<div id="other">
 				<p>Other</p>
-				<Skill value={'Software Verification'} />
-				<Skill value={'Dafny'} />
-				<Skill value={'mcrl2'} />
-				<Skill value={'Functional Programming'} />
-				<Skill value={'Haskell'} />
-				<Skill value={'Scala'} />
+				<Skill value={'User-Centered Design'} />
+				<Skill value={'Software Verification [Dafny, mcrl2]'} />
+				<Skill value={'Functional Programming [Haskell, Scala]'} />
 				<Skill value={'Malicious Software'} />
 				<Skill value={'Computational Optimisation'} />
 				<Skill value={'Git/GitHub/GitLab'} />
