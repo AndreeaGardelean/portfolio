@@ -66,9 +66,11 @@ const Work = () => {
 				</p>
 			</div>
 			<div className="imgs" id="runner-container">
-				<img alt="" src="/runner2.jpeg" className="slider-image" />
+				<img alt="" src="/runner6.jpeg" className="slider-image" />
 				<img alt="" src="/runner1.jpeg" className="slider-image" hidden />
 				<img alt="" src="/runner3.jpeg" className="slider-image" hidden />
+				<img alt="" src="/runner5.jpeg" className="slider-image" hidden />
+				<img alt="" src="/runner4.jpeg" className="slider-image" hidden />
 				<Sliders containerId="runner-container" />
 			</div>
     </div>,
