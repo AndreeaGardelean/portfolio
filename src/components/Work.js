@@ -73,8 +73,8 @@ const Work = () => {
 			</div>
 			<div className="imgs" id="pdf-container">
 				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" />
-				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" hidden />
-				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" hidden />
+				<img alt="" src="/pdfeditor2.jpeg" className="slider-image" hidden />
+				<img alt="" src="/pdfeditor3.jpeg" className="slider-image" hidden />
 				<Sliders containerId="pdf-container" />
 			</div>
     </div>, 
