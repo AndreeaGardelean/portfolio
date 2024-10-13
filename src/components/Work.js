@@ -26,6 +26,9 @@ const Work = () => {
 					The application follows Software Engineering best practices, and provides a flexible
 					design compatible for both mobile and desktop devices.
 					<br />
+          <br />
+          Tech stack: NodeJS, ExpressJS, JavaScript, HTML, CSS, jQuery, IndexedDB, OpenMapTiles.
+					<br />
 					<br />
 					<a href="https://offline-map.onrender.com/" className="link">
 						Visit the app
@@ -47,6 +50,34 @@ const Work = () => {
 				<Sliders className="offlinemap-container" containerId="offline-map-container" />
 			</div>
 		</div>,
+		<div id="pdf-editor" className="work-item active">
+			<div className="info">
+				<p className="title">PDF Editor</p>
+        <p>
+					The PDF Editor web application allows users to modify existing PDF documents with ease. Users can upload a multi-page PDF, preview its content, and interactively select pages for inclusion or exclusion. Using checkboxes next to each page, they can either download a new PDF containing only the selected pages or remove specific pages from the document. This process ensures a streamlined and intuitive experience for handling PDFs without requiring external software.
+
+					<br></br><br></br>
+					When a user initiates an action (e.g., deleting or downloading pages), the app sends the PDF and selected page data to the server, where the PDF is processed according to the user's preferences. After the new PDF is generated, it's packaged into a ZIP file and made available for download, simplifying the entire workflow.
+          <br />
+          <br />
+          Tech stack: Python, Falcon, React, CSS.
+          <br />
+					<br />
+					<a href="https://pdf-editor-um3i.onrender.com/" className="link">
+						Visit the app
+					</a>
+					<a href="https://github.com/AndreeaGardelean/pdf-editor" className="link">
+						Source code
+					</a>
+				</p>
+			</div>
+			<div className="imgs" id="pdf-container">
+				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" />
+				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" hidden />
+				<img alt="" src="/pdfeditor1.jpeg" className="slider-image" hidden />
+				<Sliders containerId="pdf-container" />
+			</div>
+    </div>, 
 		<div id="runner" className="work-item active">
 			<div className="info">
 				<p className="title">Runner PWA</p>
@@ -57,7 +88,7 @@ const Work = () => {
 					Note: the application is in early stage of development.
           <br />
           <br />
-          Tech stack: React, CSS, Java, SpringBoot, PostgreSQL, Javadoc, JSDoc, JUnit, Jest, React Testing Library.
+          Tech stack: React, CSS, Java, SpringBoot, PostgreSQL.
           <br />
           <br />
 					<a href="https://github.com/AndreeaGardelean/Runner" className="link">
