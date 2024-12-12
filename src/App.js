@@ -6,11 +6,13 @@ import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Welcome from "./components/Welcome";
 import HeaderSmall from "./components/HeaderSmall";
-import './css/page.css';
+import "./css/page.css";
+import Cursor from "./components/Cursor";
 
 function App() {
   return (
     <main style={styles.page}>
+      <Cursor />
       <HeaderSmall />
       <Header />
       <Welcome />
@@ -25,9 +27,9 @@ function App() {
 const styles = {
   page: {
     margin: 0,
-    width: '100%',
-    display: 'block'
-  }
-}
+    width: "100%",
+    display: "block",
+  },
+};
 
 export default App;

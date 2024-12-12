@@ -30,7 +30,6 @@
   font-size: 1.7rem;
   width: 35px;
   height: 35px;
-  cursor: pointer;
 }
 
 .listItemSmall {
@@ -39,7 +38,6 @@
   text-decoration-color: rgb(94 234 212);
   font-size: 1.5rem;
   padding-top: 1rem;
-  cursor: pointer;
 }
 
 #dropdown-container {
@@ -55,7 +53,7 @@
   flex-direction: column;
   display: flex;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .bar {
@@ -87,12 +85,12 @@
 }
 
 #logo {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
   color: white;
   margin: 0;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   margin-top: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.247);
   border-radius: 5rem;
+  font-size: 2.5rem;
 }

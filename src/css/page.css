@@ -1,5 +1,6 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42/var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  cursor: none;
 }

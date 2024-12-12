@@ -1,6 +1,5 @@
 .greeting {
-  --tw-bg-opacity: 1;
-  color: rgb(94 234 212/var(--tw-bg-opacity));
+  color: rgb(94 234 212);
   font-size: 1.3em;
 }
 
@@ -17,39 +16,49 @@
 .intro {
   width: 100%;
   min-height: 100vh;
-  height: fit-content;
-}
-
-.description {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: fit-content;
 }
 
 .more {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: 0;
   margin-bottom: 2em;
   color: rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .description p {
   margin: 0.2em;
 }
 
-.icon {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.more:hover #icon {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.more p {
+  margin-bottom: 0.5rem;
+}
+
+.more:hover {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .greeting {
+    font-size: 1em;
+  }
+
+  .name {
+    color: white;
+    font-size: 2em;
+  }
+
+  .phrase {
+    font-size: 1.5em;
+  }
 }

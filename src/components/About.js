@@ -1,23 +1,55 @@
-import React from "react";
-import '../css/about.css';
-import MatrixRain from "./MatrixRain";
+import React, { Fragment } from "react";
+import { Timeline, Event } from "react-timeline-scribble";
+import "../css/about.css";
+import ActivityItem from "./ActivityItem";
 
 const About = () => {
   return (
     <div id="about">
-      <MatrixRain />
-      <article id="description">
-        <p id="intro">More about me</p>
-        <p>Computer Science Graduate from Royal Holloway, University of London. Graduated with first-class honours, with an interest in security, malware, and algorithms.
-          <br></br><br></br> My experience as a teaching assistant for first-year undergraduate students has deepened my understanding of computer science concepts and strengthened my communication skills. </p>
-        <p>During my journey, I have worked on various projects, both independently and collaboratively, handling full-stack development from front-end to back-end (always saw an opportunity to expand my knowledge and take on new challenges). With each line of code, project, and challenge, I've grown into a better Computer Scientist.
-          <br></br><br></br>My role as a Software Engineer Intern has fueled my passion to excel in this field, drive impactful change, and make a positive difference in the world through technology.
-        
-          <br></br><br></br>
-        Beyond the realm of coding, I enjoy spending my free time hiking, capturing photos, painting, or reading a good book.
-          <br></br>
-          You can see some of my work on <a href="https://www.flickr.com/photos/199793426@N05/with/53447112463">Flickr</a></p>
-      </article>
+      <ul>
+        <ActivityItem
+          activityPeriod={"Jan 2025 - Present"}
+          activityTitle={"Software Engineer"}
+          activityLocation={"Thought Machine, London"}
+          activityDescription={
+            "Started my career journey as a Software Engineer."
+          }
+        />
+
+        <ActivityItem
+          activityPeriod={"Jul 2024"}
+          activityTitle={"BSc Computer Science Graduation"}
+          activityLocation={"Royal Holloway, University of London"}
+          activityDescription={
+            "Graduated with first-class honours, majoring in Computer Science."
+          }
+        />
+
+        <ActivityItem
+          activityPeriod={"Sep - Dec 2023"}
+          activityTitle={"Teaching Assistant"}
+          activityLocation={"Royal Holloway, University of London"}
+          activityDescription={`Assisted first-year Computer Science students in labs by clarifying concepts, answering questions, and evaluating weekly checkpoints to assess their understanding.`}
+        />
+
+        <ActivityItem
+          activityPeriod={"Jul - Sep 2023"}
+          activityTitle={"Software Engineer Intern"}
+          activityLocation={"Publicis Sapient, London"}
+          activityDescription={
+            "Developed a prototype blockchain-based loyalty application using agile methodology. Contributed to all stages of development, from concept to delivery, ensuring a bug-free implementation. Designed RESTful APIs in Java Spring Boot with the MVC pattern and built front-end features in React Native and CSS. Created a recommendations algorithm based on user behavior and preferences."
+          }
+        />
+
+        <ActivityItem
+          activityPeriod={"Sep 2020 - Jul 2024"}
+          activityTitle={"BSc Computer Science student"}
+          activityLocation={"Royal Holloway, University of London"}
+          activityDescription={
+            "Completed a hands-on Software Engineering course emphasizing TDD, design patterns, coding best practices and Git version control. Gained extensive knowledge in relational database design and Entity-Relationship diagrams, applying these skills in academic projects. Built a strong foundation in algorithms and computational complexity, and developed a keen interest in computer and network security, exploring malware analysis and system vulnerabilities."
+          }
+        />
+      </ul>
     </div>
   );
 };

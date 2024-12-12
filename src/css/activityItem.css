@@ -1,0 +1,52 @@
+.activity-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-bottom: 1.5rem;
+  width: 60%;
+  padding-top: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.activity-details {
+  width: 100%;
+}
+
+.period {
+  color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+  border-right: 1px rgba(255, 255, 255, 0.5) solid;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.activity-title {
+  color: rgb(94 234 212);
+}
+
+.activity-location {
+  color: rgba(255, 255, 255);
+}
+
+.activity-description {
+  color: rgba(255, 255, 255, 0.5);
+  white-space: "pre-line";
+}
+
+@media only screen and (max-width: 576px) {
+  .activity-container {
+    width: 100vw;
+  }
+
+  .activity-description {
+    max-width: 90%;
+  }
+}
+
+ul {
+  padding: 0;
+}

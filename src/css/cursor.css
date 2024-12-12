@@ -1,0 +1,25 @@
+#cursor {
+  position: relative;
+  pointer-events: none;
+}
+
+#inner-cursor {
+  position: fixed;
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+  border-radius: 5rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#outline-cursor {
+  position: fixed;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+  opacity: 0.2;
+  border-radius: 5rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}

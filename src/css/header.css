@@ -17,7 +17,7 @@
 
 .name {
   flex: 1;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .list {
@@ -39,7 +39,6 @@
 
 .listItem:hover {
   color: rgb(94 234 212);
-  cursor: pointer;
 }
 
 .dropdownList {
@@ -56,13 +55,11 @@
 }
 
 #logo {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
   color: white;
   margin: 0;
   margin-left: 1.5rem;
   margin-top: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.247);
   border-radius: 5rem;
-  cursor: pointer;
 }
